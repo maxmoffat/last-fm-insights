@@ -42,7 +42,7 @@ function processUser(){
   if(displayOption === 'list'){
     $(function(){
       var limit = $('select#display-count-list option:selected').val();
-  		var user_url = 'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user='+username+'&period='+period+'&api_key='+api_key+'&limit='+limit+'&format=json';
+  		var user_url = 'https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user='+username+'&period='+period+'&api_key='+api_key+'&limit='+limit+'&format=json';
   		$.getJSON(user_url, function(data){
 
         //logging fetched data
@@ -60,7 +60,7 @@ function processUser(){
   else if(displayOption === 'grid'){
     $(function(){
       var limit = $('select#display-count-grid option:selected').val();
-      var user_url = 'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user='+username+'&period='+period+'&api_key='+api_key+'&limit='+limit+'&format=json';
+      var user_url = 'https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user='+username+'&period='+period+'&api_key='+api_key+'&limit='+limit+'&format=json';
   		$.getJSON(user_url, function(data){
 
         //logging fetched data
