@@ -1,0 +1,193 @@
+//master styles
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body{
+  background: url("../images/stardust.png");
+  //background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-weight:bold;
+  background: -webkit-linear-gradient(#74b9ff, #a29bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:5rem;
+  margin:2rem 1rem 1rem 1rem;
+}
+
+label{
+  font-family:'Roboto', sans-serif;
+  color:#333333;
+  font-size:1rem;
+  margin:1rem 0 1rem 1rem;
+}
+
+.form-container{
+  margin-top:3rem;
+  margin-bottom:3rem;
+  padding:20px;
+  background-color:#f8f8f8;
+  border-radius:3px;
+
+
+  p{
+    font-family:'Roboto', sans-serif;
+    color:#69707a;
+    font-size:1rem;
+    margin:1rem;
+    line-height:1.6;
+  }
+
+  span#my-username{
+    font-family:'Roboto', sans-serif;
+    color:#a29bfe;
+    font-size:14px;
+    font-style: italic;
+  }
+
+  .username-row{
+    margin-top:1rem;
+
+    input#username-input{
+      margin:1rem;
+      width:30%;
+      padding:.5rem;
+      //background-color:#f8f8f8;
+    }
+
+    p#username-error{
+      color:#d63031;
+      display:none;
+      //font-style: italic;
+      font-size:12px;
+    }
+
+  } //end username-row
+
+  .dropdown-row{
+    margin-top:1rem;
+
+    select#period{
+      margin:1rem;
+      border-radius:0;
+      font-family:'Roboto', sans-serif;
+      font-size:14px;
+      background-color:#f8f8f8;
+    }
+
+    select#display-count-list{
+      margin:1rem;
+      border-radius:0;
+      font-family:'Roboto', sans-serif;
+      font-size:14px;
+      background-color:#f8f8f8;
+    }
+
+    select#display-count-grid{
+      margin:1rem;
+      border-radius:0;
+      font-family:'Roboto', sans-serif;
+      font-size:14px;
+      background-color:#f8f8f8;
+      display:none;
+    }
+  }
+
+  .display-option{
+    margin:1rem 1rem 1rem 0;
+
+    input[type="radio"] + label{
+      font-family:'Roboto', sans-serif;
+      font-size:14px;
+      color:#69707a;
+      margin:1rem .5rem 1rem .25rem;
+      //padding:1rem;
+    }
+
+    #display-option-label{
+      padding:0;
+      margin:1rem;
+    }
+
+  }
+
+
+  input[type="submit"]#submit-button{
+    margin:1rem;
+    background-color:#2ecc71;
+    border: none;
+    border-radius:3px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="submit"]#submit-button:hover{
+    opacity:0.9;
+  }
+
+  ol#results-list{
+    padding-left:1rem;
+    margin:1rem 1rem 1rem 1rem;
+
+    li{
+      padding:1rem;
+      margin-bottom:10px;
+      font-family:'Roboto', sans-serif;
+      font-size:16px;
+      color:#69707a;
+    }
+  }
+
+  div#results-grid{
+    margin:1rem;
+    display:grid;
+    grid-gap:0;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows:auto;
+
+    div{
+      margin:0;
+      padding:0;
+      display:grid;
+      position:relative;
+
+      span#album-name{
+        position:absolute;
+        top:10px;
+        left:10px;
+        font-family:'Roboto', sans-serif;
+        color:white;
+        font-weight:bolder;
+        font-size:12px;
+        margin:0;
+        padding:5px;
+        background-color:rgba(105, 112, 122, 0.4);
+      }
+
+      img{
+        display:grid;
+        width:100%;
+      }
+
+    }
+  }
+
+  p#display-option-error{
+    color:#d63031;
+    display:none;
+    //font-style: italic;
+    font-size:12px;
+  }
+
+}
