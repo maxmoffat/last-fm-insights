@@ -107,7 +107,7 @@ label {
     margin: 1rem;
     display: grid;
     grid-gap: 0;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto; }
     .form-container div#results-grid div {
       margin: 0;

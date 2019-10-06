@@ -49,7 +49,7 @@ function processUser(){
   			console.log(data.topalbums.album);
 
   			$.each(data.topalbums.album, function(key, val){
-  				$('#results-list').append($('<li>').html(''+val.name+' - '+val.artist['name']+'<br/><img style="margin-top:10px;" src='+val.image[2]["#text"]+'/>'));
+  				$('#results-list').append($('<li>').html(''+val.name+' - '+val.artist['name']+'<br/><span style="font-size:12px; color:#666666;">Playcount: '+val.playcount+'</span><br/><img style="margin-top:10px;" src='+val.image[2]["#text"]+'/>'));
   			});
 
   		});
